@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box; /*Pour dire de mettre les bordures a l'interieur de l'element. Ca permet que la marge soit a l'interieur des dimensions de l'element. Valable aussi pour les pseudos elements.*/
+}
+
+body {
+    margin: 0px; /*Pour que la bordure top soit collee au top de la page*/
+}
+
+header {
+    font-family: "Shrikhand", cursive;
+    text-align: center; /*Pour aligner l'element au centre*/
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    padding: 0.3rem;
+}
