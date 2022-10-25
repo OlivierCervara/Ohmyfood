@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 *,
@@ -9,11 +8,37 @@
 
 body {
     margin: 0px; /*Pour que la bordure top soit collee au top de la page*/
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header {
-    font-family: "Shrikhand", cursive;
-    text-align: center; /*Pour aligner l'element au centre*/
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    padding: 0.3rem;
+    text-align: center;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+    padding: 0.1rem;
+    font-size: 16px;
+    margin: 0;
+    position: relative; /*On ne voyait plus la box shadow du au fait que tous les elements ont une position static par defaut, avec la position relative, l'element passe "au dessus" de tous les autres.*/
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
+}
+
+#logo {
+    height: 40px;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.5cm;
+    font-weight: 600;
 }
