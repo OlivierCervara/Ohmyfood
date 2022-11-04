@@ -1,0 +1,41 @@
+.fonctionnement {
+    counter-reset: steps;
+    & ol {
+        display: flex;
+        gap: 2rem;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+    & li {
+        position: relative;
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: #9356dc;
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 1rem;
+            left: -1rem;
+        }
+        list-style-type: none; /*Ca va nous servir a enlever nos numeros predefinis par le type de liste li pour qu'on puisse modifier les notres comme on veut*/
+        background-color:#f6f6f6;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+        & i {
+            margin-right: 1rem;
+            color: #828282;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+

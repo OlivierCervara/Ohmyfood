@@ -1,0 +1,30 @@
+/*EXPLORER*/
+.explorer {
+    text-align: center;
+
+    & h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    }
+
+    & p {
+    font-size: 1rem;
+    }
+
+    & button {
+    color: white; /*Pour que le texte soit blanc*/
+    font-weight: 200; /*Pour que le texte soit en gras*/
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem; /*Bords arrondis*/
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+    background-image: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9)); /*Les gradient permettent de passer d'une couleur a une autre*/
+    transition: all 200ms; /*Durer de la transition pour le zoom de l'element sur le hover*/
+    margin-top: 1rem;
+    &:hover {
+        transform: scale(1.02); /*La transition sur le hover*/
+        opacity: 0.9; /*Pour diminuer l'opacite*/
+    }
+    }
+}

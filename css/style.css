@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box; /*Pour dire de mettre les bordures a l'interieur de l'element. Ca permet que la marge soit a l'interieur des dimensions de l'element. Valable aussi pour les pseudos elements.*/
+}
+
+body {
+  margin: 0px; /*Pour que la bordure top soit collee au top de la page*/
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none; /*Pour enlever la mise en page par defaut*/
+  color: inherit; /*Pour avoir tous les textes en noir*/
+}
+
+main {
+  padding: 0 1rem; /*Probleme influence city*/
+}
+
+header {
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  padding: 0.1rem;
+  font-size: 16px;
+  margin: 0;
+  position: relative; /*On ne voyait plus la box shadow du au fait que tous les elements ont une position static par defaut, avec la position relative, l'element passe "au dessus" de tous les autres.*/
+  -webkit-padding-before: 1rem;
+  padding-block-start: 1rem;
+  -webkit-padding-after: 0.5rem;
+  padding-block-end: 0.5rem;
+}
+
+#logo {
+  height: 40px;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.5cm;
+  font-weight: 600;
+}
+
+/*EXPLORER*/
+.explorer {
+  text-align: center;
+}
+.explorer h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.explorer p {
+  font-size: 1rem;
+}
+.explorer button {
+  color: white; /*Pour que le texte soit blanc*/
+  font-weight: 200; /*Pour que le texte soit en gras*/
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem; /*Bords arrondis*/
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+  background-image: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9)); /*Les gradient permettent de passer d'une couleur a une autre*/
+  transition: all 200ms; /*Durer de la transition pour le zoom de l'element sur le hover*/
+  margin-top: 1rem;
+}
+.explorer button:hover {
+  transform: scale(1.02); /*La transition sur le hover*/
+  opacity: 0.9; /*Pour diminuer l'opacite*/
+}
+
+.fonctionnement {
+  counter-reset: steps;
+}
+.fonctionnement ol {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
+}
+.fonctionnement li {
+  position: relative;
+  list-style-type: none; /*Ca va nous servir a enlever nos numeros predefinis par le type de liste li pour qu'on puisse modifier les notres comme on veut*/
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+}
+.fonctionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+}
+.fonctionnement li i {
+  margin-right: 1rem;
+  color: #828282;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
