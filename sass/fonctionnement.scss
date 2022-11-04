@@ -1,13 +1,22 @@
 .fonctionnement {
+    padding: 0 1rem;
+    padding-top: 1.8rem;
     counter-reset: steps;
+    & h2 {
+        font-size: 1.7rem;
+    }
     & ol {
+        font-weight: bold;
         display: flex;
         gap: 2rem;
+        padding-left: 22px;
         @media (max-width: 992px) {
             flex-direction: column;
         }
     }
     & li {
+        align-items: center;
+        justify-content: center;
         position: relative;
         &::before {
             content: counter(steps);
@@ -20,22 +29,31 @@
             place-items: center;
             border-radius: 50%;
             position: absolute;
-            bottom: 1rem;
+            bottom: 22px;
             left: -1rem;
         }
         list-style-type: none; /*Ca va nous servir a enlever nos numeros predefinis par le type de liste li pour qu'on puisse modifier les notres comme on veut*/
         background-color:#f6f6f6;
-        padding: 1.5rem 2rem;
+        padding: 1.7rem 2.5rem;
         flex-grow: 1;
         border-radius: 1rem;
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
+        margin-right: 0.7rem;
         & i {
             margin-right: 1rem;
-            color: #828282;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
     }
 }
 
+.grey { /* Je creer des class avec comme propriete des couleurs afin de pouvoir modifier la couleur de mes elements*/
+    color: #828282;
+}
 
+.purple {
+    color: #9356dc;
+}
 
+#purple-case { /*J'utilise un id afin de pouvoir modifier mon element de maniere unique*/
+    background: rgba($color: #9356dc, $alpha: 0.1); /*Grace au background rgba je peux modifier l'opacite de la couleur*/
+}

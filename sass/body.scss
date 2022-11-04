@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"); /*Importation de la font*/
 *,
 ::before,
 ::after {
@@ -7,7 +7,7 @@
 
 body {
     margin: 0px; /*Pour que la bordure top soit collee au top de la page*/
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif; /*La font pour tout le site*/
 }
 
 a {
@@ -15,6 +15,3 @@ a {
     color: inherit; /*Pour avoir tous les textes en noir*/
 }
 
-main {
-    padding: 0 1rem; /*Probleme influence city*/
-}
