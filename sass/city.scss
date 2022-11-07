@@ -1,12 +1,23 @@
 .city {
     color: #3e3e3e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /*display flex permet de modifier la taille comme on veut sans avoir des problemes d'empilements d'elements sans aucune incidence sur la boite*/
+    align-items: center; /*align items center permet a ce que tous les elements soient a la meme hauteur*/
+    justify-content: center; /*Les éléments sont regroupés au centre du conteneur selon l'axe principal.*/
     gap: 1rem; 
     background-color: #eaeaea;
-    text-align: center;
+    text-align: center; /*Pour centrer le texte*/
     padding: 1.2rem;
     font-size: 0.5cm; 
     font-weight: 600;
+}
+
+.city input {
+    border: 1px solid #F2F2F2;
+    overflow: auto; /*overflow sert a faire en sorte que l'input ne soit pas couper par sa boite*/
+}
+            
+.city input::placeholder {
+    font-size: 0.5cm;
+    color: #3e3e3e;
+    font-weight: bold;
 }
