@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"); /*Importation de la font*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box; /*Pour dire de mettre les bordures a l'interieur de l'element. Ca permet que la marge soit a l'interieur des dimensions de l'element. Valable aussi pour les pseudos elements.*/
 }
@@ -157,6 +158,7 @@ header {
   background-color: #f6f6f6;
   padding: 0 1rem;
   padding-top: 1.8rem;
+  margin-bottom: 2rem;
 }
 .restaurants h2 {
   font-size: 1.7rem;
@@ -187,7 +189,7 @@ header {
   top: 1rem; /*Pour placer l'element a 1rem du top et 1rem de la droite*/
 }
 .restaurants .card__image {
-  height: 15rem;
+  height: 12rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
 }
@@ -204,21 +206,48 @@ header {
   background-image: url("../images/restaurants/menu-4.jpg");
 }
 .restaurants .card__description {
+  height: 5rem;
   position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
 .restaurants .card__description h3,
 .restaurants .card__description p {
-  margin: 0.5rem;
-}
-.restaurants .card__description h3 {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 .restaurants .card__description i {
-  font-size: 2rem;
+  font-size: 1.6rem;
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.restaurants .card__description .fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.restaurants .card__description .fa-solid:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(-50%) scale(1.1);
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 2rem;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 1rem 0;
+}
+footer p {
+  padding: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
