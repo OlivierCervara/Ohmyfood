@@ -13,12 +13,27 @@
         @media (max-width: 800px) {
             grid-template-columns: repeat(1, 1fr);
         }
+        .nouveau { /*On veut que le nouveau soit juste une class qu'on rajoute aux elements qui sont nouveaux et des que je leur met une class nouveau ca leur fait apparaitre le badge*/
+            position: relative;
+        }
+        .nouveau::before {
+            content: "Nouveau"; /*Quand on utilise un pseudo element il faut toujours un content meme vide*/
+            position: absolute; /*Quand on met une position absolute il faut que le parent soit en position relative. Sinon il va aller rechercher le premier element en position relative et ca va pas faire ce qu'on veut*/
+            height: 2rem;
+            width: 5rem;
+            background-color: #9ee2d0;
+            color: darken($color: #9ee2d0, $amount: 50%); /*La propriete darken permet d'assombrir une couleur. le second parametre correspond au niveau d'assombrissement*/
+            display: grid; /*text-align: center; ne centrait pas verticalement*/
+            place-items: center;
+            right: 1rem;
+            top: 1rem; /*Pour placer l'element a 1rem du top et 1rem de la droite*/
+        }
     }
 
     .card {
         &__image {
             height: 15rem;
-            border-radius: 1rem;
+            border-radius: 1rem 1rem 0 0;
             background-size: cover;
         }
         &__image-1 {
@@ -32,6 +47,23 @@
         }
         &__image-4 {
             background-image: url("../images/restaurants/menu-4.jpg");
+        }
+        &__description {
+            position: relative;
+            h3,
+            p {
+                margin: 0.5rem;
+            }
+            h3 {
+                padding-top: 0.5rem;
+            }
+            i {
+                font-size: 2rem;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 }
