@@ -5,10 +5,19 @@ footer {
     h2 {
         font-family: "Shrikhand", "sans-serif";
         font-weight: 500;
-        padding: 1rem 0;
+        font-size: 1.2rem;
+        padding: 12px 0;
+        margin: 0;
     }
     p {
-        padding: 0.2rem;
+        padding: 0.3rem;
 
+    }
+    i {
+        margin-right: 5px;
+    }
+    .fa-utensils {
+        margin-right: 7px;
+        margin-left: 3px;
     }
 }
