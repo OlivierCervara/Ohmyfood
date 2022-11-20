@@ -1,3 +1,4 @@
+    /*ACCUEIL*/
 @import "./sass/body.scss";
 @import "./sass/header.scss";
 @import "./sass/city.scss";
@@ -5,3 +6,11 @@
 @import "./sass/fonctionnement";
 @import "./sass/restaurants";
 @import "./sass/footer";
+
+    /*RESTAURANT-1*/
+@import "./sass/restaurants-alternatifs/restaurants-alt";
+
+
+
+    /*ANIMATION*/
+@import "./sass/restaurants-alternatifs/animations.scss"
