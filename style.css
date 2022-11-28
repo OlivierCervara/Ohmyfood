@@ -272,11 +272,21 @@ footer .fa-utensils {
     transform: rotate(0);
   }
 }
+@keyframes progressive {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   background-color: #f6f6f6;
 }
 
 #page-restaurant {
+  /*FLECHE VERS INDEX*/
+  /*IMAGE DE BANNIERE*/
   /*BOUTTON COMMANDER*/
 }
 #page-restaurant header::before {
@@ -293,6 +303,7 @@ body {
   transform: translateY(-50%);
   top: 50%;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 #page-restaurant .banner img {
   display: block;
@@ -447,6 +458,14 @@ body {
   }
   100% {
     transform: rotate(0);
+  }
+}
+@keyframes progressive {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
