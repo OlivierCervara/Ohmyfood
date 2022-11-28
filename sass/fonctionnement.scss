@@ -10,7 +10,9 @@
     }
     & h2 {
         font-size: 1.7rem;
-        padding-left: 0.9rem;
+        @media (max-width: 280px) {
+            padding-left: 0.9rem;
+        }
     }
     & ol {
         font-weight: bold;
