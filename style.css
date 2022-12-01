@@ -355,6 +355,7 @@ body {
   font-family: "Shrikhand", "sans-serif";
   position: relative;
   padding: 2rem 1rem;
+  margin-bottom: -2rem;
 }
 #page-restaurant .restaurant-title h2 i {
   font-size: 1.6rem;
@@ -385,19 +386,21 @@ body {
   display: grid;
   grid-template-rows: auto repeat(3, 1fr);
   gap: 1rem;
-  grid-auto-flow: column;
+  grid-auto-flow: column; /*Orientation colonne*/
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media (max-width: 1000px) {
   #page-restaurant .menus {
     grid-template-columns: 1fr;
-    grid-auto-flow: column;
+    grid-template-rows: auto;
+    grid-auto-flow: row; /*Orientation ligne*/
   }
 }
 #page-restaurant .menus h3 {
   text-transform: uppercase; /*Pour pouvoir affiché le texte en majuscule tout en gardat les accents*/
   font-weight: 400;
   position: relative;
+  margin-top: 2.5rem;
 }
 #page-restaurant .menus h3::after { /*after et non before parce qu'il arrive après*/
   content: ""; /*Meme si vide le content est obligatoire quand on utilise un pseudo élément*/
