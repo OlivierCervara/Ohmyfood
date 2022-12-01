@@ -346,13 +346,15 @@ body {
   object-position: center bottom;
 }
 #page-restaurant .restaurant-title {
-  margin-top: -2rem;
+  top: -3.5rem;
+  background-color: #f6f6f6;
+  position: relative;
+  border-radius: 2.5rem 2.5rem 0 0;
 }
 #page-restaurant .restaurant-title h2 {
   font-family: "Shrikhand", "sans-serif";
   position: relative;
   padding: 2rem 1rem;
-  border-radius: 2rem 2rem 0 0;
 }
 #page-restaurant .restaurant-title h2 i {
   font-size: 1.6rem;
@@ -381,8 +383,9 @@ body {
 #page-restaurant .menus {
   background-color: #f6f6f6;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
   gap: 1rem;
+  grid-auto-flow: column;
 }
 @media (max-width: 1000px) {
   #page-restaurant .menus {

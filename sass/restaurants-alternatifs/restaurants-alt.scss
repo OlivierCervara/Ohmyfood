@@ -34,12 +34,14 @@ body {
     }  
 
     .restaurant-title {
-        margin-top: -2rem;
+        top: -3.5rem;
+        background-color:#f6f6f6;
+        position: relative;
+        border-radius: 2.5rem 2.5rem 0 0;
         h2 {
             font-family: "Shrikhand", "sans-serif";
             position: relative;
             padding: 2rem 1rem;
-            border-radius: 2rem 2rem 0 0;
             i {
                 font-size: 1.6rem;
                 position: absolute;
@@ -71,8 +73,9 @@ body {
     .menus {
         background-color:#f6f6f6;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(3, 1fr);
         gap: 1rem;
+        grid-auto-flow: column;
         @media (max-width: 1000px) {
             grid-template-columns: repeat(1,1fr);
         }
