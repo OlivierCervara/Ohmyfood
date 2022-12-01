@@ -71,12 +71,14 @@ body {
     }
 
     .menus {
+        @media (min-width: 1151px) {
         background-color:#f6f6f6;
         display: grid;
         grid-template-rows: auto repeat(3, 1fr);
         gap: 1rem;
         grid-auto-flow: column;
-        @media (max-width: 1000px) {
+        }
+        @media (max-width: 1151px) {
             grid-template-columns: repeat(1,1fr);
         }
         h3 {
@@ -143,7 +145,7 @@ body {
                 &:hover {
                     cursor: pointer;
                     .menu-item__check {
-                        margin-right: -1px;
+                        margin-right: 0px;
                     }
                     i {
                         animation: check-spin 0.5s ease-in-out;

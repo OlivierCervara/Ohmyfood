@@ -380,14 +380,16 @@ body {
   background-color: #f6f6f6;
   padding: 0 1rem;
 }
-#page-restaurant .menus {
-  background-color: #f6f6f6;
-  display: grid;
-  grid-template-rows: auto repeat(3, 1fr);
-  gap: 1rem;
-  grid-auto-flow: column;
+@media (min-width: 1151px) {
+  #page-restaurant .menus {
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-flow: column;
+  }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1151px) {
   #page-restaurant .menus {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -459,7 +461,7 @@ body {
   cursor: pointer;
 }
 #page-restaurant .menus .menus__category .menu-item:hover .menu-item__check {
-  margin-right: -1px;
+  margin-right: 0px;
 }
 #page-restaurant .menus .menus__category .menu-item:hover i {
   animation: check-spin 0.5s ease-in-out;
