@@ -71,15 +71,15 @@ body {
     }
 
     .menus {
-        @media (min-width: 1151px) {
         background-color:#f6f6f6;
         display: grid;
         grid-template-rows: auto repeat(3, 1fr);
         gap: 1rem;
         grid-auto-flow: column;
-        }
-        @media (max-width: 1151px) {
-            grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-auto-flow: column;
         }
         h3 {
             text-transform: uppercase; /*Pour pouvoir affiché le texte en majuscule tout en gardat les accents*/

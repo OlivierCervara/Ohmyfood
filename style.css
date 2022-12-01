@@ -380,18 +380,18 @@ body {
   background-color: #f6f6f6;
   padding: 0 1rem;
 }
-@media (min-width: 1151px) {
-  #page-restaurant .menus {
-    background-color: #f6f6f6;
-    display: grid;
-    grid-template-rows: auto repeat(3, 1fr);
-    gap: 1rem;
-    grid-auto-flow: column;
-  }
+#page-restaurant .menus {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-@media (max-width: 1151px) {
+@media (max-width: 1000px) {
   #page-restaurant .menus {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
   }
 }
 #page-restaurant .menus h3 {
