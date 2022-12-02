@@ -305,7 +305,7 @@ footer .fa-utensils {
     transform: rotate(0);
   }
 }
-@keyframes progressive {
+@keyframes appear {
   0% {
     transform: scale(0);
   }
@@ -415,6 +415,41 @@ body {
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
+  animation: appear 1.5s;
+  animation-fill-mode: both;
+}
+#page-restaurant .menus .menus__category:nth-child(2) {
+  animation-delay: 200ms;
+}
+#page-restaurant .menus .menus__category:nth-child(3) {
+  animation-delay: 300ms;
+}
+#page-restaurant .menus .menus__category:nth-child(4) {
+  animation-delay: 400ms;
+}
+#page-restaurant .menus .menus__category:nth-child(5) {
+  animation-delay: 500ms;
+}
+#page-restaurant .menus .menus__category:nth-child(6) {
+  animation-delay: 600ms;
+}
+#page-restaurant .menus .menus__category:nth-child(7) {
+  animation-delay: 700ms;
+}
+#page-restaurant .menus .menus__category:nth-child(8) {
+  animation-delay: 800ms;
+}
+#page-restaurant .menus .menus__category:nth-child(9) {
+  animation-delay: 900ms;
+}
+#page-restaurant .menus .menus__category:nth-child(10) {
+  animation-delay: 1000ms;
+}
+#page-restaurant .menus .menus__category:nth-child(11) {
+  animation-delay: 1100ms;
+}
+#page-restaurant .menus .menus__category:nth-child(12) {
+  animation-delay: 1200ms;
 }
 #page-restaurant .menus .menus__category .menu-item {
   display: flex;
@@ -501,7 +536,7 @@ body {
     transform: rotate(0);
   }
 }
-@keyframes progressive {
+@keyframes appear {
   0% {
     transform: scale(0);
   }
