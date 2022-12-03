@@ -1,4 +1,4 @@
-@import "./animations";
+@import "animations";
 
 body {
     background-color: #f6f6f6;
@@ -74,7 +74,7 @@ body {
     .menus {
         background-color:#f6f6f6;
         display: grid;
-        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-rows: auto repeat(3, 1fr); /*mettre 4 pour le restau 2*/
         gap: 1rem;
         grid-auto-flow: column; /*Orientation colonne*/
         grid-template-columns: 1fr 1fr 1fr;
@@ -165,6 +165,31 @@ body {
         }
     }
 
+    #restaurant-2 {
+        display: grid;
+        grid-template-rows: auto repeat(4, 1fr); /*mettre 4 pour le restau 2*/
+        gap: 1rem;
+        grid-auto-flow: column; /*Orientation colonne*/
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-auto-flow: row; /*Orientation ligne*/
+        }
+        .menus__category {
+            background-color: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            animation: appear 1.5s;
+            animation-fill-mode: both;
+            @for $i from 2 through 14 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+        }
+    }
+
 /*BOUTTON COMMANDER*/
     .order {
         button {
@@ -191,3 +216,4 @@ body {
         }
     }
 }
+
