@@ -106,6 +106,49 @@ header {
   opacity: 0.9; /*Pour diminuer l'opacite*/
 }
 
+.loader {
+  position: fixed; /*Pour maintenir l'élément meme si on scroll*/
+  display: grid;
+  place-items: center; /*Pour placer le loading spinner au centre*/
+  background-color: #ffffff;
+  height: 100vh; /*Pour que ça prenne tout l'écran peut importe sa taille*/
+  inset: 0; /*Position sur la page*/
+  z-index: 2; /*Pour que l'élément soit "au dessus" sur l'axe z (3d)*/
+  opacity: 0.9;
+  animation: disappear 200ms; /*On appelle l'animation*/
+  animation-delay: 2s; /*Délais de l'animation*/
+  animation-fill-mode: forwards; /*Pour dire à l'élément soit de se mettre en place avant l'animation, soit de garder sa place une fois l'animation terminée. forward permet à l'animation de se "terminé"*/
+  transform-origin: top; /*Pour que l'animation disparaisse par le haut*/
+}
+.loader::after {
+  content: "";
+  height: 80px;
+  width: 80px;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356dc;
+  border-radius: 50%;
+  animation: spinner 1s ease-in-out; /*Pour qu'il tourne 3s avec une vitesse constante*/
+  animation-iteration-count: 2;
+}
+
+/*On veut que notre loader disparaisse au bout de x secondes, on va faire ça avec une animation*/
+@keyframes disappear {
+  0% {
+    transform: scale(1); /*Il commence par 1 car il apparait en premier et il finit à 0 pour la disparition*/
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/*On aurait pu utiliser un spinner tout fait sur fontawesome mais on va essayer de le faire nous memes*/
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .fonctionnement {
   padding: 0 1rem;
   padding-top: 1.8rem;
