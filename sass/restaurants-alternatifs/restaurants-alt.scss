@@ -147,7 +147,7 @@ body {
                     place-items: center;
                     flex-shrink: 0; /*Pour que notre i garde les memes dimensions à dimensions de page réduites*/
                     background: white;
-                    aspect-ratio: 1;
+                    aspect-ratio: 1 / 1;
                     width: 2rem;
                     border-radius: 1rem;
                     color: #9ee2d0;
