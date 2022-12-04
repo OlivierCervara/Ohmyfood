@@ -1,17 +1,12 @@
 header {
+    font-family: "Shrikhand", cursive;
+    font-size: 17px;
     text-align: center;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
     padding: 0.1rem;
-    margin: 0;
     position: relative; /*On ne voyait plus la box shadow du au fait que tous les elements ont une position static par defaut, avec la position relative, l'element passe "au dessus" de tous les autres.*/
-    -webkit-padding-before: 1rem;
-    padding-block-start: 1rem;
-    -webkit-padding-after: 0.5rem;
-    padding-block-end: 0.5rem;
+    & h1 {
+        margin: 10px;
+    }
 }
 
-#logo {
-    height: 40px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
