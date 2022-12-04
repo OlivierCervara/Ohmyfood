@@ -73,7 +73,7 @@
 
 @keyframes spinner {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0deg); /*Il commence sa rotation à 0 pour faire un tour complet à 360 degré à la fin de l'animation*/
     }
     100% {
         transform: rotate(360deg);

@@ -143,7 +143,7 @@ header {
 /*On aurait pu utiliser un spinner tout fait sur fontawesome mais on va essayer de le faire nous memes*/
 @keyframes spinner {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /*Il commence sa rotation à 0 pour faire un tour complet à 360 degré à la fin de l'animation*/
   }
   100% {
     transform: rotate(360deg);
@@ -201,7 +201,7 @@ header {
 }
 .fonctionnement li::before {
   content: counter(steps);
-  counter-increment: steps;
+  counter-increment: steps; /*Pour pouvoir augmenter la valeur du compteur steps*/
   color: white;
   background-color: #9356dc;
   width: 2rem; /*largeur*/
@@ -226,7 +226,7 @@ header {
   font-size: 1.4rem;
 }
 @media (max-width: 360px) {
-  .fonctionnement li {
+  .fonctionnement li { /*Résolution du problème de repsonsive, galaxy fold a une largeur très petite il a donc fallu supprimer un maximum d'espace afin de respecter la maquette*/
     margin-right: 0;
     padding-right: 0;
   }
@@ -272,16 +272,16 @@ header {
   background-size: cover;
 }
 .restaurants .card__image-1 {
-  background-image: url("images/restaurants/menu-1.jpg");
+  background-image: url("../images/restaurants/menu-1.jpg");
 }
 .restaurants .card__image-2 {
-  background-image: url("images/restaurants/menu-2.jpg");
+  background-image: url("../images/restaurants/menu-2.jpg");
 }
 .restaurants .card__image-3 {
-  background-image: url("images/restaurants/menu-3.jpg");
+  background-image: url("../images/restaurants/menu-3.jpg");
 }
 .restaurants .card__image-4 {
-  background-image: url("images/restaurants/menu-4.jpg");
+  background-image: url("../images/restaurants/menu-4.jpg");
 }
 .restaurants .card__description {
   height: 5rem;
@@ -368,7 +368,7 @@ body {
   /*BOUTTON COMMANDER*/
 }
 #page-restaurant header::before {
-  content: "\f177";
+  content: "\f177"; /*On a voulu importer directement depuis le CSS, dans un pseudo élément la flèche de font awesome*/
   display: flex;
   font-style: normal;
   font-variant: normal;
@@ -459,42 +459,42 @@ body {
 #page-restaurant .menus .menus__category {
   background-color: white;
   border-radius: 1rem;
-  overflow: hidden;
+  overflow: hidden; /*On veut pas que le texte dépasse de son bloc avec dimensions réduites*/
   animation: appear 1.5s;
-  animation-fill-mode: both;
+  animation-fill-mode: both; /*On ne veut pas qu'une fois finie, l'animation reprenne une position initiale*/
 }
 #page-restaurant .menus .menus__category:nth-child(2) {
-  animation-delay: 200ms;
+  animation-delay: 200ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(3) {
-  animation-delay: 300ms;
+  animation-delay: 300ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(4) {
-  animation-delay: 400ms;
+  animation-delay: 400ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(5) {
-  animation-delay: 500ms;
+  animation-delay: 500ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(6) {
-  animation-delay: 600ms;
+  animation-delay: 600ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(7) {
-  animation-delay: 700ms;
+  animation-delay: 700ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(8) {
-  animation-delay: 800ms;
+  animation-delay: 800ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(9) {
-  animation-delay: 900ms;
+  animation-delay: 900ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(10) {
-  animation-delay: 1000ms;
+  animation-delay: 1000ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(11) {
-  animation-delay: 1100ms;
+  animation-delay: 1100ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category:nth-child(12) {
-  animation-delay: 1200ms;
+  animation-delay: 1200ms; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
 }
 #page-restaurant .menus .menus__category .menu-item {
   display: flex;
@@ -507,7 +507,7 @@ body {
   font-weight: 900;
   padding: 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end; /*Pour que le bord de la marge des éléments flexibles sur l'axe en bloc soit aligné avec le bord de la ligne à la fin de l'axe en bloc.*/
 }
 #page-restaurant .menus .menus__category .menu-item .menu-item__description {
   padding: 1rem;

@@ -4,7 +4,7 @@
   "description": "P3 OpenClassrooms OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch sass/style.scss css/style.css ."
   },
   "repository": {
     "type": "git",

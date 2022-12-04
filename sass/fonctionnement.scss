@@ -33,7 +33,7 @@
         transition: all 200ms; /*Durer de la transition pour le zoom de l'element sur le hover*/
         &::before {
             content: counter(steps);
-            counter-increment: steps;
+            counter-increment: steps; /*Pour pouvoir augmenter la valeur du compteur steps*/
             color: white;
             background-color: #9356dc;
             width: 2rem; /*largeur*/
@@ -64,7 +64,7 @@
             margin-right: 1rem;
             font-size: 1.4rem;
         }
-        @media (max-width: 360px) {
+        @media (max-width: 360px) { /*Résolution du problème de repsonsive, galaxy fold a une largeur très petite il a donc fallu supprimer un maximum d'espace afin de respecter la maquette*/
             margin-right: 0;
             padding-right: 0;
         }

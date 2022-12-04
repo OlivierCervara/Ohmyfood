@@ -8,7 +8,7 @@ body {
 
 /*FLECHE VERS INDEX*/
     header::before{
-        content: "\f177";
+        content: "\f177"; /*On a voulu importer directement depuis le CSS, dans un pseudo élément la flèche de font awesome*/
         display: flex;
         font-style: normal;
         font-variant: normal;
@@ -101,12 +101,12 @@ body {
         .menus__category {
             background-color: white;
             border-radius: 1rem;
-            overflow: hidden;
+            overflow: hidden; /*On veut pas que le texte dépasse de son bloc avec dimensions réduites*/
             animation: appear 1.5s;
-            animation-fill-mode: both;
+            animation-fill-mode: both; /*On ne veut pas qu'une fois finie, l'animation reprenne une position initiale*/
             @for $i from 2 through 12 {
                 &:nth-child(#{$i}) {
-                    animation-delay: 100ms * $i;
+                    animation-delay: 100ms * $i; /*On multiplie le délais par $i pour que chaque i prenne un délais de 100ms mais chacun leur tour*/
                 }
             }
             .menu-item {
@@ -119,7 +119,7 @@ body {
                     font-weight: 900;
                     padding: 1rem;
                     display: flex;
-                    align-items: flex-end;
+                    align-items: flex-end; /*Pour que le bord de la marge des éléments flexibles sur l'axe en bloc soit aligné avec le bord de la ligne à la fin de l'axe en bloc.*/
                 }
                 .menu-item__description {
                     padding: 1rem;
