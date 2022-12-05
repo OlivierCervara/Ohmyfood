@@ -264,6 +264,7 @@ header h1 {
   height: 12rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
+  background-position: center; /*Pour que les images soient toujours positionner au centre*/
 }
 .restaurants .card__image-1 {
   background-image: url("../images/restaurants/menu-1.jpg");
@@ -381,7 +382,7 @@ body {
   width: 100%;
   height: 70vh;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center;
 }
 #page-restaurant .restaurant-title {
   top: -3.5rem;
