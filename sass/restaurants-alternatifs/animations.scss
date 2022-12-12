@@ -9,7 +9,7 @@
 
 @keyframes appear {
     0% {
-        transform: translateY(50%);
+        transform: translateY(50%); /*permet de déplacer un élement verticalement sur le plan.*/
         opacity: 0;
     }
     100% {

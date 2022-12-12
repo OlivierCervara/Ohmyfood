@@ -121,7 +121,7 @@ header h1 {
   border: 5px solid transparent;
   border-top: 5px solid #9356dc;
   border-radius: 50%;
-  animation: spinner 1s ease-in-out; /*Pour qu'il tourne 3s avec une vitesse constante*/
+  animation: spinner 1s ease-in-out; /*Pour qu'il tourne 1s avec une vitesse constante*/
   animation-iteration-count: 2;
 }
 
@@ -294,7 +294,7 @@ header h1 {
   position: absolute;
   right: 1rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /*permet de déplacer un élement verticalement sur le plan.*/
 }
 .restaurants .card__description .fa-solid {
   color: transparent;
@@ -344,7 +344,7 @@ footer .fa-utensils {
 }
 @keyframes appear {
   0% {
-    transform: translateY(50%);
+    transform: translateY(50%); /*permet de déplacer un élement verticalement sur le plan.*/
     opacity: 0;
   }
   100% {
@@ -637,7 +637,7 @@ body {
 }
 @keyframes appear {
   0% {
-    transform: translateY(50%);
+    transform: translateY(50%); /*permet de déplacer un élement verticalement sur le plan.*/
     opacity: 0;
   }
   100% {

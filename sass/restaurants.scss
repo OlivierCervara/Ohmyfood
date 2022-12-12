@@ -65,7 +65,7 @@
                 position: absolute;
                 right: 1rem;
                 top: 50%;
-                transform: translateY(-50%);
+                transform: translateY(-50%); /*permet de déplacer un élement verticalement sur le plan.*/
             }
             .fa-solid {
                 color: transparent;
