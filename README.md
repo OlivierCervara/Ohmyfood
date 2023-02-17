@@ -77,5 +77,5 @@ Pour tester simplement & rapidement, veuillez préférer visiter la démo en lig
 
 Sinon, clonez le projet
 ```terminal
-git clone https://github.com/MathisBarre/MathisBarre_3_04112020.git
+git clone https://github.com/OlivierCervara/Ohmyfood.git
 ```
