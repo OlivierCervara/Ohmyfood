@@ -2,7 +2,7 @@
 
 Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
-Lien du site réalisé : https://alexandrepda.github.io/Ohmyfood/index.html
+Lien du site réalisé : https://oliviercervara.github.io/Ohmyfood/
 
 Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 
@@ -73,7 +73,7 @@ Compatibilité : Dernières versions de Chrome, Firefox & Safari
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.mathisbarre.com](https://ohmyfood.mathisbarre.com/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.oliviercervara.com](https://oliviercervara.github.io/Ohmyfood/)
 
 Sinon, clonez le projet
 ```terminal
